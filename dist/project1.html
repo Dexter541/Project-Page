@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="output.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body style="font-family: 'Poppins', sans-serif" class="p-5">
+		<div class="container flex justify-end mx-auto lg:hidden">
+			<span class="material-symbols-outlined pe-4 pt-6 scale-200 fixed z-10" onclick="OpenNav()"> menu </span>
+		</div>
+		<div
+			class="hidden fixed top-0 left-0 w-screen h-60 bg-blue-950 z-20 flex-col items-center justify-center text-white text-xl font-normal text-center"
+			id="Nav"
+		>
+			<span class="material-symbols-outlined pr-4 pt-8 self-end scale-150 font-bold" onclick="CloseNav()"> close </span>
+			<ul class="">
+				<li class="hover:text-blue-500 hover:translate-y-1 duration-300 mb-5 mt-9">
+					<a href="index.html" href="" onclick="smoothScroll('#about');CloseNav()">About</a>
+				</li>
+				<li class="hover:text-blue-500 hover:translate-y-1 duration-300 mb-5">
+					<a href="index.html" onclick="smoothScroll('#projects'); CloseNav() ">Projects</a>
+				</li>
+				<li class="hover:text-blue-500 hover:translate-y-1 duration-300 mb-10"><a>Resume</a></li>
+			</ul>
+		</div>
+		<div class="hidden lg:flex items-center justify-center mt-10">
+			<ul class="flex gap-10 text-xl font-medium">
+				<li class="hover:text-blue-500 hover:translate-y-1 duration-300"><a href="index.html">About</a></li>
+				<li class="hover:text-blue-500 hover:translate-y-1 duration-300"><a href="index.html">Projects</a></li>
+				<li class="hover:text-blue-500 hover:translate-y-1 duration-300"><a href="http://">Resume</a></li>
+			</ul>
+		</div>
+		<div class="mt-12 p-8">
+			<div class="flex flex-col lg:items-center justify-start lg:justify-center">
+				<h5 class="font-normal text-gray-500 mt-5 lg:text-lg">Full stack development</h5>
+				<h2 class="lg:text-5xl text-xl font-bold">Food Affairs Delivery Website</h2>
+			</div>
+
+			<div class="flex mx-auto md:w-1/2">
+				<img src="images\MacBook Air - 1.png" class="" alt="" />
+			</div>
+			<div class="flex flex-col justify-center mx-auto lg:w-3/4">
+				<h1 class="text-blue-500 text-2xl font-bold mt-3">Project Details</h1>
+				<div class="grid grid-cols-2 mt-3 gap-7 text-left justify-start">
+					<div class="">
+						<h1 class="font-semibold">Type</h1>
+						<ul class="list-disc ml-4">
+							<li><h1>Contract Work</h1></li>
+						</ul>
+					</div>
+					<div class="">
+						<h1 class="font-semibold">Duration</h1>
+						<ul class="list-disc ml-4">
+							<li><h1>3 Months</h1></li>
+						</ul>
+					</div>
+				</div>
+				<div class="grid grid-cols-2 mt-5 gap-7 text-left justify-start">
+					<div class="me-3">
+						<h1 class="font-semibold">Role</h1>
+						<ul class="list-disc ml-4">
+							<li>Design</li>
+							<li>Front-end development</li>
+							<li>Backend Development</li>
+							<li>Database Management</li>
+						</ul>
+					</div>
+					<div>
+						<h1 class="font-semibold">Tools</h1>
+						<ul class="list-disc ml-4">
+							<li>Golang</li>
+							<li>Javascript</li>
+							<li>Html & Css</li>
+							<li>Figma</li>
+							<li>Bootstrap</li>
+						</ul>
+					</div>
+				</div>
+				<h1 class="mt-4 font-semibold">Visit</h1>
+				<a href="" class="hover:text-blue-500 hover:underline hover:translate-x-2 duration-200">www.foodaffairs.ng</a>
+				<div class="mt-8">
+					<h2 class="text-2xl font-bold text-blue-500">Work Highlights</h2>
+					<ul class="list-disc p-5 lg:mr-20">
+						<li>
+							I used Figma to design and create wireframes, streamlining development by establishing a clear visual representation of
+							the application's structure and design for efficient project execution.
+						</li>
+						<br />
+						<li>
+							I utilized Golang for efficient backend development, handling client-server requests, implementing clean server-side
+							logic, and ensuring thorough testing for reliable functionality.
+						</li>
+						<br />
+						<li>
+							Using Bootstrap, I transformed my Figma designs into a visually appealing and responsive website, ensuring compatibility
+							across all devices. The main focus was on creating an engaging user experience with seamless responsiveness.
+						</li>
+						<br />
+						<li>
+							Lastly, leveraging MySQL as the preferred database, I implemented basic CRUD operations, prioritizing data validation from
+							the client-side. This ensured data integrity, security, and efficient management for seamless application functionality
+							and user experience.
+						</li>
+						<br />
+						<li>
+							The site's main eye-catchers include a dynamic menu page allowing users to place orders, seamlessly transitioning to a
+							secure checkout for payment processing. Additionally, an admin portal offers order management, menu updates, item
+							additions, and an authentication system for enhanced security and control.
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script>
+			function OpenNav(params) {
+				let Nav = document.getElementById("Nav");
+				Nav.classList.remove("hidden");
+				Nav.classList.add("flex");
+				if (!event.target.closest("#Nav")) {
+					console.log("hi");
+				}
+			}
+			function CloseNav(params) {
+				let Nav = document.getElementById("Nav");
+				Nav.classList.remove("flex");
+				Nav.classList.add("hidden");
+			}
+		</script>
+	</body>
+</html>
